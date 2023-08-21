@@ -20,6 +20,7 @@ class Auto:
         self.marca = marca
         self.motor = motor
         self.registro = registro
+        self.cantidadCrados += 1
 
     def cantidadAsientos(self):
         totalAsientos = 0
@@ -47,6 +48,5 @@ class Motor:
         self.registro = registro
     
     def asignarTipo(self, tipo):
-        tipos = ['electrico', 'gasolina']
-        if tipo in tipos:
+        if tipo in ['electrico', 'gasolina']:
             self.tipo = tipo 
