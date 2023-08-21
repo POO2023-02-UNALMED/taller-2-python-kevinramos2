@@ -32,6 +32,7 @@ class Auto:
                     return ('Las piezas no son originales')
                 else:
                     return ('Auto original')
+        return ('Las piezas no son originales')
 
 class Motor:
     def init(self, numerocilindro, tipo, registro):
