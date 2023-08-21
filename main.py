@@ -1,5 +1,5 @@
 class Asiento:
-    def init(self, color, precio, registro):
+    def __init__(self, color, precio, registro):
         self.color = color
         self.precio = precio
         self.registro = registro
@@ -13,14 +13,13 @@ class Asiento:
 class Auto:
     #¿cantidadCreados debería ir por fuera del método? prueba1
     cantidadCrados = 0
-    def init(self, modelo, precio, asientos, marca, motor, registro):
+    def __init__(self, modelo, precio, asientos, marca, motor, registro):
         self.modelo = modelo
         self.precio = precio
         self.asientos = asientos
         self.marca = marca
         self.motor = motor
         self.registro = registro
-
 
     def cantidadAsientos(self):
         totalAsientos = 0
@@ -39,7 +38,7 @@ class Auto:
         return ('Las piezas no son originales')
 
 class Motor:
-    def init(self, numerocilindro, tipo, registro):
+    def __init__(self, numerocilindro, tipo, registro):
         self.numeroCilindro = numerocilindro
         self.tipo = tipo
         self.registro = registro
