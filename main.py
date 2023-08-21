@@ -5,7 +5,7 @@ class Asiento:
         self.registro = registro
       
     def cambiarColor(self, color):
-        if color in  ['amarillo', ' verde', 'rojo', 'blanco', 'negro']:
+        if color in  ['rojo', ' verde', 'amarillo', 'negro', 'blanco']:
             self.color = color
 
 class Auto:
