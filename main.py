@@ -5,13 +5,10 @@ class Asiento:
         self.registro = registro
       
     def cambiarColor(self, color):
-        #ahorrar lineas y para que se vea más ordenado
-        colores = ['amarillo', ' verde', 'rojo', 'blanco', 'negro']
-        if color in colores:
+        if color in  ['amarillo', ' verde', 'rojo', 'blanco', 'negro']:
             self.color = color
 
 class Auto:
-    #¿cantidadCreados debería ir por fuera del método? prueba1
     cantidadCrados = 0
     def __init__(self, modelo, precio, asientos, marca, motor, registro):
         self.modelo = modelo
